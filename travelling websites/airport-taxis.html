@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Taxis - TravelNow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">TravelNow</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stays.html">Stays</a></li>
+                <li><a href="flights.html">Flights</a></li>
+                <li><a href="car-rental.html">Car Rental</a></li>
+                <li><a href="airport-taxis.html" class="active">Airport Taxis</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Airport Taxi Booking</h1>
+            <p>Book a reliable taxi to or from the airport, anytime. Choose from a variety of vehicles and services for a smooth journey.</p>
+        </section>
+        <section class="taxi-list" style="display:flex;flex-wrap:wrap;gap:2rem;justify-content:center;">
+            <div class="destination-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0oD8jYHNhVWovN0xS10X0e8MNRLPwX0JhgFKDpQe9HiaiVpD4BYBI9lnUcxixIhmIxBU&usqp=CAU" alt="Standard Taxi">
+                <h4>Standard Taxi</h4>
+                <p>Comfortable and safe rides to your destination from the airport. Available 24/7.</p>
+                <button class="book-taxi-btn main-btn" data-price="12" data-car="Standard Taxi" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0oD8jYHNhVWovN0xS10X0e8MNRLPwX0JhgFKDpQe9HiaiVpD4BYBI9lnUcxixIhmIxBU&usqp=CAU" data-desc="Comfortable and safe rides to your destination from the airport. Available 24/7.">Book Taxi</button>
+            </div>
+            <div class="destination-card">
+                <img src="https://static.pakwheels.com/2023/06/1-6.jpg" alt="Executive Taxi">
+                <h4>Executive Taxi</h4>
+                <p>Premium cars with professional drivers for business travelers and VIP guests.</p>
+                <button class="book-taxi-btn main-btn" data-price="20" data-car="Executive Taxi" data-img="https://static.pakwheels.com/2023/06/1-6.jpg" data-desc="Premium cars with professional drivers for business travelers and VIP guests.">Book Taxi</button>
+            </div>
+            <div class="destination-card">
+                <img src="https://hqcustomdesign.com/wp-content/uploads/2018/07/X3WFYCS9RA-20180525-141314.jpg" alt="Family Van">
+                <h4>Family Van</h4>
+                <p>Spacious vans for families or groups with extra luggage. Child seats available on request.</p>
+                <button class="book-taxi-btn main-btn" data-price="18" data-car="Family Van" data-img="https://hqcustomdesign.com/wp-content/uploads/2018/07/X3WFYCS9RA-20180525-141314.jpg" data-desc="Spacious vans for families or groups with extra luggage. Child seats available on request.">Book Taxi</button>
+            </div>
+        
+        </section>
+    </main>
+</body>
+</html>

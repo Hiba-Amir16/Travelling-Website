@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TravelNow</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-container {
+            max-width: 800px;
+            margin: 3rem auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 2.5rem 2.5rem 2rem 2.5rem;
+        }
+        .about-container h1 {
+            color: #003580;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .about-services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        .service-card {
+            background: #f4f8fb;
+            border-radius: 10px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            width: 220px;
+            padding: 1.2rem 1rem;
+            text-align: center;
+        }
+        .service-card img {
+            width: 100%;
+            max-width: 120px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .service-card h3 {
+            color: #003580;
+            margin-bottom: 0.5rem;
+        }
+        .service-card p {
+            color: #333;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">TravelNow</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stays.html">Stays</a></li>
+                <li><a href="flights.html">Flights</a></li>
+                <li><a href="car-rental.html">Car Rental</a></li>
+                <li><a href="airport-taxis.html">Airport Taxis</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="about-container">
+            <h1>About TravelNow</h1>
+            <p style="text-align:center;font-size:1.15rem;">TravelNow is your one-stop solution for all your travel needs. We offer a wide range of services to make your journey comfortable, convenient, and memorable. Explore our services below:</p>
+            <div class="about-services">
+                <div class="service-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="Stays">
+                    <h3>Stays</h3>
+                    <p>Book hotels, resorts, and guest houses at the best prices for your stay anywhere in the world.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3079/3079052.png" alt="Flights">
+                    <h3>Flights</h3>
+                    <p>Find and book flights to your favorite destinations with ease and flexibility.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" alt="Car Rental">
+                    <h3>Car Rental</h3>
+                    <p>Choose from a wide range of cars for rent, from economy to luxury, for your travel needs.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" alt="Airport Taxis">
+                    <h3>Airport Taxis</h3>
+                    <p>Book reliable airport taxis for timely pickups and drop-offs, available 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

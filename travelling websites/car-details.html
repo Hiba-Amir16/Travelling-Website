@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details - TravelNow</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .car-details-container {
+            max-width: 500px;
+            margin: 3rem auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 2rem 2.5rem;
+            text-align: center;
+        }
+        .car-details-container img {
+            width: 100%;
+            max-width: 350px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+        .car-details-container h2 {
+            color: #003580;
+            margin-bottom: 0.5rem;
+        }
+        .car-details-container p {
+            color: #333;
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+        }
+        .car-details-price {
+            font-size: 1.3rem;
+            color: #003580;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+        .back-btn {
+            background: #003580;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            padding: 0.7rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            margin: 1rem auto 0.5rem auto;
+            display: block;
+            transition: background 0.2s;
+        }
+        .back-btn:hover {
+            background: #ffb700;
+            color: #003580;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">TravelNow</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stays.html">Stays</a></li>
+                <li><a href="flights.html">Flights</a></li>
+                <li><a href="car-rental.html" class="active">Car Rental</a></li>
+                <li><a href="airport-taxis.html">Airport Taxis</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="car-details-container">
+            <img id="carImg" src="" alt="Car Image">
+            <h2 id="carName"></h2>
+            <p id="carDesc"></p>
+            <div class="car-details-price" id="carPrice"></div>
+            <button class="back-btn main-btn" onclick="window.history.back()">Back</button>
+        </div>
+    </main>
+    <script>
+        // Parse URL params and show car details
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('carName').textContent = params.get('car') || '';
+        document.getElementById('carImg').src = params.get('img') || '';
+        document.getElementById('carImg').alt = params.get('car') || 'Car Image';
+        document.getElementById('carDesc').textContent = params.get('desc') || '';
+        document.getElementById('carPrice').textContent = params.get('price') ? `Charges: $${params.get('price')} / hr` : '';
+    </script>
+</body>
+</html>
